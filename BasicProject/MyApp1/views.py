@@ -8,11 +8,10 @@ def index(request):
 
     return render(
         request,
-        "MyApp1/index.html",  # Relative path from the 'templates' folder to the template file
+        "MyApp1/about.html",  # Relative path from the 'templates' folder to the template file
         # "index.html", # Use this code for VS 2017 15.7 and earlier
         {
-            'title' : "Hello Django",
-            'message' : "Hello Django!",
-            'content' : " on " + now.strftime("%A, %d %B, %Y at %X")
+            'title' : "About HelloDjangoApp",
+            'content' : "Example app page for Django."
         }
     )
