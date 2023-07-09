@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Patient Monitoring</title>
+</head>
+<body>
+    <h1>Real-Time Patient Monitoring</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Heart Rate</th>
+                <th>Blood Pressure</th>
+                <!-- Add more sensor data fields as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in sensor_data %}
+            <tr>
+                <td>{{ data.timestamp }}</td>
+                <td>{{ data.heart_rate }}</td>
+                <td>{{ data.blood_pressure }}</td>
+                <!-- Render more sensor data fields as needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
